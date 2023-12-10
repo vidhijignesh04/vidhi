@@ -1,0 +1,43 @@
+<html>
+<body>
+enter a first number:
+<input type="text" id="n1">
+enter a second number:
+<input type="text" id="n2">
+<input type="button" value="add"onclick="add()">
+<input type="button" value="sub"onclick="sub()">
+<input type="button" value="multi"onclick="multi()">
+<input type="button" value="div"onclick="div()">
+<div id="result"></div>
+<script>
+function add()
+{
+	var n1=parseInt(document.getElementById("n1").value);
+	var n2=parseInt(document.getElementById("n2").value);
+	var sum=n1+n2;	
+	document.getElementById("result").innerHTML=sum;
+}
+function sub()
+{
+	var n1=parseInt(document.getElementById("n1").value);
+	var n2=parseInt(document.getElementById("n2").value);
+	var sub=n1-n2;	
+	document.getElementById("result").innerHTML=sub;
+}
+function multi()
+{
+	var n1=parseInt(document.getElementById("n1").value);
+	var n2=parseInt(document.getElementById("n2").value);
+	var multi=n1*n2;	
+	document.getElementById("result").innerHTML=multi;
+}
+function div()
+{
+	var n1=parseInt(document.getElementById("n1").value);
+	var n2=parseInt(document.getElementById("n2").value);
+	var div=n1/n2;	
+	document.getElementById("result").innerHTML=div;
+}
+</script>
+</body>
+</html>
